@@ -1,8 +1,11 @@
 ## Dragon Dance Legends
 
+![image](https://github.com/user-attachments/assets/0839829c-5997-484f-b199-15809f8f9c9e)
+
 **Imersão Dev Alura com Google Gemini**
 
-Projeto desenvolvido com base no conteúdo adquirido durante esta imersão fantástica onde com o suporte da IA Interativa Gemini, foi construindo um site estático do zero utilizando as tecnologias HTML5, CSS3 e Javascript. 
+Projeto desenvolvido com base no conteúdo adquirido durante esta imersão fantástica onde com o suporte da IA Interativa Gemini, foi construindo um site estático do zero utilizando as tecnologias HTML5, CSS3 e Javascript.  [Acesse o site aqui](https://dragon-dance-legends.vercel.app/)
+
 
 **O que esse projeto faz?**
 
