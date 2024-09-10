@@ -5,7 +5,7 @@ let personagensHouseOfTheDragon = [
         descricao: "O irmão mais novo de Viserys I Targaryen e um guerreiro habilidoso. Carismático e impulsivo, ele é um dos personagens mais complexos de House of the Dragon, capaz tanto de grande heroísmo quanto de atos cruéis.",
         casa: "Targaryen",
         link: "https://wiki.geloefogo.com/index.php/Aemond_Targaryen",
-        image: "https://wiki.geloefogo.com/images/c/c0/Daemon_profile.jpg"
+        image: "./assets/Daemon_profile.jpg"
     },
     {
         nome: "Otto Hightower",
@@ -61,6 +61,6 @@ let personagensHouseOfTheDragon = [
         descricao: "Um cavaleiro de origem comum que se torna uma figura central na guerra civil. Inicialmente leal a Rhaenyra, ele eventualmente se alinha com Alicent e seus filhos.",
         casa: "Cole",
         link: "https://wiki.geloefogo.com/index.php/Criston_Cole",
-        image: "https://wiki.geloefogo.com/index.php/Arquivo:Criston_Cole_HoTD.jpg"
+        image: "https://wiki.geloefogo.com/images/a/a9/Criston_Cole_HoTD.jpg"
     }
 ];

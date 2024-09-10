@@ -32,7 +32,8 @@ function pesquisar() {
         if (nome.includes(campoPesquisa) || titulo.includes(campoPesquisa)){
             // cria um novo elemento
             resultados += `
-            <div class="item-resultado">                
+            <div class="item-resultado">    
+                <img src=${personagem.image}>            
                 <h2>
                     <a href="#" target="_blank">${personagem.nome}</a>
                 </h2>
