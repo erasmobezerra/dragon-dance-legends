@@ -43,6 +43,7 @@ h1 {
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
 }
 
+
 h2 {
     text-align: center;
 }
@@ -245,8 +246,7 @@ footer {
     }
 
     .caixa-pesquisa {    
-        padding-right: 2rem;
-        padding-left: 1rem;    
+
         padding-top: 2rem;    
     }
 
