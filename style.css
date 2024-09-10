@@ -251,11 +251,11 @@ footer {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     header p {
-        font-size: 1rem; /* Tamanho da fonte */       
+        font-size: 1.2rem; /* Tamanho da fonte */       
         margin-bottom: 2rem;    
     }
 
@@ -289,7 +289,7 @@ footer {
 
     /* Estiliza os títulos dentro dos itens de resultado */
     .item-resultado h2 {
-        font-size: 0.9rem; /* Tamanho da fonte */    
+        font-size: 1rem; /* Tamanho da fonte */    
         margin-top: auto; /* Centraliza o título */       
     }
 
@@ -301,11 +301,11 @@ footer {
 
     /* Estiliza a descrição meta dentro dos itens de resultado */
     .descricao-meta {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .descricao-erro {    
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     footer {
