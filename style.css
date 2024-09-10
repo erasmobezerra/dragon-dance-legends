@@ -251,11 +251,12 @@ footer {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem
+  
     }
 
     header p {
-        font-size: 1.2rem; /* Tamanho da fonte */       
+        font-size: 0.8rem; /* Tamanho da fonte */       
         margin-bottom: 2rem;    
     }
 
