@@ -3,7 +3,7 @@
 
 /* Estiliza o corpo da página */
 body {
-    background-image: url('image.jpg');
+    background-image: url('./assets/image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,10 +21,22 @@ main {
     flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
 }
 
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-pesquisa {    
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-top: 3rem; 
+    margin-bottom: 2rem; /* Espaço abaixo para evitar sobreposição com o footer */
+}
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 3rem; /* Tamanho da fonte */
+    font-size: 3.5rem; /* Tamanho da fonte */
     font-style: italic;
     color: coral; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
@@ -37,10 +49,9 @@ h2 {
 
 
 header p {
-    font-size: 1.2rem; /* Tamanho da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte */
     color: coral; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.3rem; /* Espaçamento entre letras */
+    text-align: center; /* Alinha o texto ao centro */    
     margin-bottom: 2rem;    
 }
 
@@ -61,13 +72,10 @@ section input {
     margin-bottom: 2rem; /* Espaçamento abaixo dos inputs */
     color: #45474B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
+    text-align: center;
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-section p {
-
-
-}
 
 section img{
     display: block;
@@ -82,7 +90,7 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
+    background-color: rgb(165, 62, 3); /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
@@ -90,12 +98,11 @@ section button {
 
 
 /* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
-    background-color: #145291;
+section button:hover {   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
+}
 
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -146,25 +153,11 @@ section button:hover {
 
 .descricao-erro {    
     margin: 0.5rem 0; /* Margem acima e abaixo */
+    font-size: 1rem;
     color: #ffe204; 
-    text-align: center
+    text-align: center;
+    letter-spacing: 0.1rem; /* Espaçamento entre letras */
 }
-
-.caixa-pesquisa {
-    
-    padding-right: 2rem;
-    padding-left: 1rem;
-    margin-bottom: 2rem; /* Espaço abaixo para evitar sobreposição com o footer */
-}
-
-.container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
 
 /* Estiliza o rodapé da página */
 footer {
@@ -176,3 +169,142 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
 }
 
+
+/* Estilos para tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+
+    .caixa-pesquisa {        
+        padding-top: 3.5rem;    
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.2rem; /* Tamanho da fonte */       
+        margin-bottom: 3rem;    
+    }
+
+    /* Estiliza os inputs dentro das seções */
+    section input {
+        width: 25rem; /* Largura dos inputs */            
+        font-size: 1rem; /* Tamanho da fonte */    
+        padding: 0.6rem; /* Espaçamento interno */ 
+        font-weight: bold;  
+    }
+
+    /* Estiliza os botões dentro das seções */
+    section button {
+        padding: 0.7rem 1rem; /* Espaçamento interno do botão */   
+        font-size: 1rem; /* Tamanho da fonte */        
+    }
+
+    /* Estiliza a caixa de resultados da pesquisa */
+    .resultados-pesquisa {
+        width: 32rem; /* Largura máxima da caixa de resultados */        
+    }
+
+
+    /* Estiliza cada item de resultado */
+    .item-resultado {       
+        width: 30rem; /* Largura da caixa de resultado */    
+        padding: 0.8rem; /* Espaçamento interno */
+        margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    }
+
+
+
+    .item-resultado h2 {
+        font-size: 0.9rem; /* Tamanho da fonte */    
+        margin-top: auto; /* Centraliza o título */       
+    }
+
+
+    .descricao-meta {
+        font-size: 0.6rem;
+    }
+
+    .descricao-erro {    
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;        
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    body {
+        background-image: url('./assets/image2.jpg');     
+        background-position: top;      
+        padding: 0;        
+    }
+
+    .caixa-pesquisa {    
+        padding-right: 2rem;
+        padding-left: 1rem;    
+        padding-top: 2rem;    
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem; /* Tamanho da fonte */       
+        margin-bottom: 2rem;    
+    }
+
+    /* Estiliza os inputs dentro das seções */
+    section input {
+        width: 18rem; /* Largura dos inputs */            
+        font-size: 0.8rem; /* Tamanho da fonte */    
+        padding: 0.4rem; /* Espaçamento interno */ 
+        font-weight: bold;  
+    }
+
+    /* Estiliza os botões dentro das seções */
+    section button {
+        padding: 0.5rem 1rem; /* Espaçamento interno do botão */   
+        font-size: 0.8rem; /* Tamanho da fonte */        
+    }
+
+    /* Estiliza a caixa de resultados da pesquisa */
+    .resultados-pesquisa {
+        width: 22rem; /* Largura máxima da caixa de resultados */        
+    }
+
+
+    /* Estiliza cada item de resultado */
+    .item-resultado {       
+        width: 20rem; /* Largura da caixa de resultado */    
+        padding: 0.6rem; /* Espaçamento interno */
+        margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    }
+
+
+    /* Estiliza os títulos dentro dos itens de resultado */
+    .item-resultado h2 {
+        font-size: 0.9rem; /* Tamanho da fonte */    
+        margin-top: auto; /* Centraliza o título */       
+    }
+
+    /* Estiliza a descrição meta dentro dos itens de resultado */
+    .descricao-meta {
+        font-size: 0.6rem;
+    }
+
+    .descricao-erro {    
+        font-size: 0.6rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+        background-color: #000000;
+        padding-bottom: 1rem;
+    }
+}

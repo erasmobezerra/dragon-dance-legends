@@ -9,7 +9,7 @@ function pesquisar() {
         section.innerHTML = 
         `<div class="item-resultado"> 
             <p class="descricao-erro">
-                >>> Erro! É obrigatório informar o nome ou título de um personagem da serie. <<<
+                >>> Erro! É obrigatório informar o nome ou título de um personagem da serie.
             </p>
         </div>
         `;
@@ -49,7 +49,7 @@ function pesquisar() {
         resultados = `
         '<div class="item-resultado"> 
             <p class="descricao-erro">
-               >>> Atenção! Nome ou título informado não encontrado. Tente novamente! <<< 
+               >>> Atenção! Nome ou título informado não encontrado. Tente novamente!
             </p>
         </div>       
     `;
