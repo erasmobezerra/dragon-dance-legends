@@ -26,15 +26,19 @@ main {
 h1 {
     font-size: 3rem; /* Tamanho da fonte */
     font-style: italic;
-    color: burlywood; /* Cor do texto */
+    color: coral; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
 }
 
-
 h2 {
-    font-size: 1.3rem; /* Tamanho da fonte */
-    color: burlywood; /* Cor do texto */
+    text-align: center;
+}
+
+
+header p {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: coral; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.3rem; /* Espaçamento entre letras */
     margin-bottom: 2rem;    
@@ -61,7 +65,8 @@ section input {
 }
 
 section p {
-color: burlywood;
+
+
 }
 
 section img{
@@ -101,7 +106,7 @@ section button:hover {
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */        
+
 }
 
 
@@ -109,6 +114,7 @@ section button:hover {
 /* Estiliza cada item de resultado */
 .item-resultado {
     background: #541212; /* Cor de fundo dos itens */
+    width: 50rem; /* Largura da caixa de resultado */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -118,13 +124,13 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: burlywood; /* Cor do texto */
+    color: coral; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: burlywood; /* Cor do texto dos links */
+    color: coral; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -134,8 +140,14 @@ section button:hover {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: burlywood; /* Cor do texto */
+    color: coral; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+.descricao-erro {    
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+    color: #ffe204; 
+    text-align: center
 }
 
 .caixa-pesquisa {
@@ -157,7 +169,7 @@ section button:hover {
 /* Estiliza o rodapé da página */
 footer {
     background-color: rgba(0, 0, 0, 0.666); /* Cor de fundo do rodapé */
-    color: burlywood; /* Cor do texto */
+    color: coral; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 1rem; /* Adiciona algum espaçamento interno */
     width: 100%; /* Largura total da página */
