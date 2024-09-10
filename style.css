@@ -28,9 +28,7 @@ main {
 }
 
 .caixa-pesquisa {    
-    padding-right: 2rem;
-    padding-left: 1rem;
-    padding-top: 3rem; 
+    padding: initial; 
     margin-bottom: 2rem; /* Espaço abaixo para evitar sobreposição com o footer */
 }
 
@@ -174,10 +172,6 @@ footer {
 /* Estilos para tablets (768px - 1024px) */
 @media (max-width: 1024px) {
 
-    .caixa-pesquisa {        
-        padding-top: 3.5rem;    
-    }
-
     h1 {
         font-size: 3rem;
     }
@@ -245,14 +239,8 @@ footer {
         padding: 0;        
     }
 
-    .caixa-pesquisa {    
-
-        padding-top: 2rem;    
-    }
-
     h1 {
-        font-size: 1.6rem
-  
+        font-size: 1.6rem  
     }
 
     header p {
