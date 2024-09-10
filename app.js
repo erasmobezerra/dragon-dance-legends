@@ -6,8 +6,15 @@ function pesquisar() {
 
     // se campoPesquisa for uma string sem nada
     if (!campoPesquisa) {
-        section.innerHTML = "<p>É obrigatório informar o nome ou título de um personagem da serie.</p>"
-        return 
+        section.innerHTML = 
+        `<div class="item-resultado"> 
+            <p class="descricao-erro">
+                >>> Erro! É obrigatório informar o nome ou título de um personagem da serie. <<<
+            </p>
+        </div>
+        `;
+
+        return         
     }
 
     campoPesquisa = campoPesquisa.toLowerCase()
@@ -39,7 +46,13 @@ function pesquisar() {
     }
 
     if (!resultados) {
-        resultados = "<p>Opsss! Você não digitou um nome ou título de um personagem da série. Favor tente novamente!</p>"
+        resultados = `
+        '<div class="item-resultado"> 
+            <p class="descricao-erro">
+               >>> Atenção! Nome ou título informado não encontrado. Tente novamente! <<< 
+            </p>
+        </div>       
+    `;
     }
 
     // Atribui os resultados gerados à seção HTML
