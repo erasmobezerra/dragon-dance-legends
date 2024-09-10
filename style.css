@@ -293,6 +293,12 @@ footer {
         margin-top: auto; /* Centraliza o título */       
     }
 
+    section img{  
+        height: 8rem;
+        margin-bottom: 1.5rem;
+   
+    }
+
     /* Estiliza a descrição meta dentro dos itens de resultado */
     .descricao-meta {
         font-size: 0.6rem;
